@@ -12,7 +12,7 @@ The code is based on the [SSD](https://github.com/weiliu89/caffe/tree/ssd) and [
 
 Tiny-DSOD tries to tackle the trade-off between detection accuracy and computation resource consumption. In this work, our tiny-model outperforms other small sized detection network (pelee, mobilenet-ssd or tiny-yolo) in the metrics of FLOPs, parameter size and accuracy. To be specific, on the dataset of PASCAL VOC2007, Tiny-DSOD achieves mAP of 72.1% with less than 1 million parameters (0.95M)
 
-![basic unit DDB](https://github.com/lyxok1/Tiny-DSOD/raw/master/image/DDB-b.pdf)
+![basic unit DDB](https://github.com/lyxok1/Tiny-DSOD/raw/master/image/DDB.png)
 
 ![D-FPN](https://github.com/lyxok1/Tiny-DSOD/raw/master/image/front.png)
 
@@ -55,7 +55,7 @@ And then use the binary `./build/tools/caffe` to train the generated network
 
 ## Deploy a pre-trained model
 
-If you want to directly deploy a pre-trained model, you can use the demo scripts we provide in the `example/DCOD/directory`
+If you want to directly deploy a pre-trained model, you can use the demo scripts we provide in the `example/DCOD/` directory
 
 - for image input detection, use the following command:
 ```Shell
