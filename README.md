@@ -121,3 +121,9 @@ optional arguments:
 We released a model pretrained on VOC2007 on [Baidu Yun (3.3MB)](https://pan.baidu.com/s/1DDruQ_i0upyscbqGK0s92A)
 
 ## Example
+
+![kitti1](https://github.com/lyxok1/Tiny-DSOD/raw/master/image/kitti1.png)
+
+![kitti1](https://github.com/lyxok1/Tiny-DSOD/raw/master/image/kitti2.png)
+
+![kitti1](https://github.com/lyxok1/Tiny-DSOD/raw/master/image/kitti3.png)

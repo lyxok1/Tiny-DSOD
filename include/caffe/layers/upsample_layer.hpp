@@ -1,6 +1,11 @@
 #ifndef CAFFE_UPSAMPLE_LAYER_HPP_
 #define CAFFE_UPSAMPLE_LAYER_HPP_
 
+/*
+* written in 2018.3.12
+* Author Yuxi Li
+*/
+
 #include <vector>
 #include "caffe/blob.hpp"
 #include "caffe/layer.hpp"
