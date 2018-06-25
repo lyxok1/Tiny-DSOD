@@ -161,7 +161,7 @@ if __name__ == '__main__':
         if not os.path.exists(output_dir):
             os.mkdir(output_dir)
 
-        ret = cv2.imwrite('./vis/{}/{}'.format(dataset, images[i]), image)
+        ret = cv2.imwrite('./vis/{}/{}'.format(dataset, images[i]), image[:,:,::-1])
         if ret:
             print('finish process image: {}'.format(img))
 
