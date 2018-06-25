@@ -269,13 +269,13 @@ void MultiBoxLossLayer<Dtype>::Forward_cpu(const vector<Blob<Dtype>*>& bottom,
     top[0]->mutable_cpu_data()[0] +=
         loc_weight_ * loc_loss_.cpu_data()[0] / normalizer;
 
-    LOG(INFO) << "Loc loss : " << loc_loss_.cpu_data()[0] / normalizer;
+    //LOG(INFO) << "Loc loss : " << loc_loss_.cpu_data()[0] / normalizer;
   }
   if (this->layer_param_.propagate_down(1)) {
     Dtype normalizer = LossLayer<Dtype>::GetNormalizer(
         normalization_, num_, num_priors_, num_matches_);
     top[0]->mutable_cpu_data()[0] += conf_loss_.cpu_data()[0] / normalizer;
-    LOG(INFO) << "Conf loss : " << conf_loss_.cpu_data()[0] / normalizer;
+    //LOG(INFO) << "Conf loss : " << conf_loss_.cpu_data()[0] / normalizer;
   }
 }
 
