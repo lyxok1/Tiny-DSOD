@@ -2,9 +2,9 @@
 
 This repository releases the code for our paper
 
-**Tiny-DSOD: Lightweight Object Detection for Resource Restricted Usage**
+**Tiny-DSOD: Lightweight Object Detection for Resource Restricted Usage (BMVC2018)**
 
-**Yuxi Li, [Jianguo Li](https://sites.google.com/site/leeplus/), Jiuwei Li and Weiyao Lin (BMVC2018)**
+**Yuxi Li, [Jianguo Li](https://sites.google.com/site/leeplus/), Jiuwei Li and Weiyao Lin**
 
 The code is based on the [SSD](https://github.com/weiliu89/caffe/tree/ssd) and [DSOD](https://github.com/szq0214/DSOD) framework.
 
@@ -136,8 +136,8 @@ If you think this work is helpful for your own research, please consider add fol
 @inproceedings{li2018tiny,
   title = {{Tiny-DSOD}: Lightweight Object Detection for Resource-restricted Usage},
   author = {Yuxi Li, Jianguo Li, Jiuwei Li and Weiyao Lin},
-  booktitle = {ECCV},
-  year = {2016}
+  booktitle = {BMVC},
+  year = {2018}
 }
 
 ```
