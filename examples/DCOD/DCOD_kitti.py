@@ -170,6 +170,9 @@ test_transform_param = {
 # If true, use batch norm for all newly added layers.
 # Currently only the non batch norm version has been tested.
 use_batchnorm = True
+use_objectness = False
+is_condition = False
+
 lr_mult = 1
 # Use different initial learning rate.
 if use_batchnorm:
@@ -403,7 +406,7 @@ net.data, net.label = CreateAnnotatedDataLayer(train_data, batch_size=batch_size
         train=True, output_label=True, label_map_file=label_map_file,
         transform_param=train_transform_param, batch_sampler=batch_sampler)
 
-DCOD300_Body(net, from_layer='data',growth_rate=32, use_reverse=use_reverse)
+DCOD300_Body(net, from_layer='data',growth_rate=32, use_reverse=use_reverse, use_objectness=use_objectness)
 
 mbox_layers = CreateMultiBoxHead(net, data_layer='data', from_layers=mbox_source_layers,
         use_batchnorm=use_batchnorm, min_sizes=min_sizes, max_sizes=max_sizes,
@@ -429,7 +432,7 @@ net.data, net.label = CreateAnnotatedDataLayer(test_data, batch_size=test_batch_
         train=False, output_label=True, label_map_file=label_map_file,
         transform_param=test_transform_param)
 
-DCOD300_Body(net, from_layer='data', growth_rate=32, use_reverse=use_reverse)
+DCOD300_Body(net, from_layer='data', growth_rate=32, use_reverse=use_reverse, use_objectness=use_objectness)
 
 mbox_layers = CreateMultiBoxHead(net, data_layer='data', from_layers=mbox_source_layers,
         use_batchnorm=use_batchnorm, min_sizes=min_sizes, max_sizes=max_sizes,
