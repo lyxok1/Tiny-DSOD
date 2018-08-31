@@ -118,7 +118,7 @@ optional arguments:
 
 ## Released model
 
-We released a model pretrained on VOC2007 on [Baidu Yun (3.3MB)](https://pan.baidu.com/s/1DDruQ_i0upyscbqGK0s92A)
+We released a model pretrained on VOC2007 on [Baidu Yun (3.8MB)](https://pan.baidu.com/s/1tNEZRWHwoVSOIuYwz2DlVQ)
 
 ## Example
 
